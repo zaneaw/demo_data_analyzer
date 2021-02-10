@@ -10,10 +10,10 @@ class DemographicAnalyzerTestCase(unittest.TestCase):
         expected = [27816, 3124, 1039, 311, 271]
         self.assertAlmostEqual(actual, expected, msg="Expected race count values to be [27816, 3124, 1039, 311, 271]")
     
-    # def test_average_age_men(self):
-    #     actual = self.data['average_age_men']
-    #     expected = 39.4
-    #     self.assertAlmostEqual(actual, expected, msg="Expected different value for average age of men.")
+    def test_average_age_men(self):
+        actual = self.data['average_age_men']
+        expected = 39.4
+        self.assertAlmostEqual(actual, expected, msg="Expected different value for average age of men.")
 
     # def test_percentage_bachelors(self):
     #     actual = self.data['percentage_bachelors']
